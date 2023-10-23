@@ -2,6 +2,7 @@ from django.shortcuts import render,redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from django.contrib.auth import authenticate,login,logout
+from .forms import RegisterUserForm
 
 
 
@@ -12,7 +13,7 @@ def login(request):
 
 def signup(request):
     if request.method == "POST":
-        register_user_form = UserCreationForm(request.POST)
+        register_user_form = RegisterUserForm(request.POST)
         if register_user_form.is_valid():
             register_user_form.save()
             username = register_user_form.cleaned_data['username']
