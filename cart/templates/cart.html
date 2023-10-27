@@ -1,0 +1,101 @@
+{% extends './cart_base.html' %}
+
+{% block content %}
+
+<section class="py-0">
+    <div class="row">
+        <div class="col-6 text-center mx-auto mt-5 mb-4">
+            <h2 spellcheck="false">Read Latest Articles</h2>
+            <p>See what people from all around the world are saying about our website.</p>
+            <button class="text-black m-4 bg-blue-600 py-2 rounded-3xl px-4 text-md font-bold">
+                <a href="{% url 'checkout' %}">Checkout</a></button>
+        </div>
+    </div>
+</section>
+<section class="pb-6 bg-gray-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-lg-0 mb-4">
+                <div class="card">
+                    <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
+                        <a href="javascript:;" class="d-block">
+                            <img src="https://images.unsplash.com/photo-1627483297929-37f416fec7cd?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDF8MHxzZWFyY2h8OHx8ZmFzaGlvbnxlbnwwfDB8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" class="img-fluid border-radius-lg">
+                        </a>
+                    </div>
+
+                    <div class="card-body pt-3">
+                        <span class="text-gradient text-warning text-uppercase text-xs font-weight-bold my-2">fitness</span>
+                        <a href="javascript:;" class="card-title h5 d-block text-darker">See Best Fitness Clothes</a>
+                        <p class="card-description mb-4">
+                            Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons.
+                        </p>
+                        <div class="author align-items-center">
+                            <img src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/team-2.jpg" alt="..." class="avatar shadow">
+                            <div class="name ps-3">
+                                <span>Mathew Glock</span>
+                                <div class="stats">
+                                    <small>Posted on 28 February</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-lg-0 mb-4">
+                <div class="card">
+                    <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
+                        <a href="javascript:;" class="d-block">
+                            <img src="https://images.unsplash.com/photo-1462392246754-28dfa2df8e6b?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80" class="img-fluid border-radius-lg">
+                        </a>
+                    </div>
+
+                    <div class="card-body pt-3">
+                        <span class="text-gradient text-info text-uppercase text-xs font-weight-bold my-2">Shops</span>
+                        <a href="javascript:;" class="text-darker card-title h5 d-block">Vintage Shops. Yes or No?</a>
+                        <p class="card-description mb-4">
+                            Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons.
+                        </p>
+                        <div class="author align-items-center">
+                            <img src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/ivana-square.jpg" alt="..." class="avatar shadow">
+                            <div class="name ps-3">
+                                <span>Chriss Smahos</span>
+                                <div class="stats">
+                                    <small>Posted 2 min ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-lg-0 mb-4">
+                <div class="card">
+                    <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
+                        <a href="javascript:;" class="d-block">
+                            <img src="https://images.unsplash.com/photo-1549439602-43ebca2327af?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80" class="img-fluid border-radius-lg">
+                        </a>
+                    </div>
+
+                    <div class="card-body pt-3">
+                        <span class="text-gradient text-warning text-uppercase text-xs font-weight-bold my-2">party</span>
+                        <a href="javascript:;" class="text-darker card-title h5 d-block">Outfits for Friday Nights</a>
+                        <p class="card-description mb-4">
+                            Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons.
+                        </p>
+                        <div class="author align-items-center">
+                            <img src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/marie.jpg" alt="..." class="avatar shadow">
+                            <div class="name ps-3">
+                                <span>Elijah Miller</span>
+                                <div class="stats">
+                                    <small>Posted now</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
