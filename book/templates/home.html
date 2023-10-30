@@ -2,51 +2,364 @@
 
 
 {% block content %}
-    <header class="flex flex-row justify-center mx-auto py-16 px-8 bg-yellow-400">
-        <div class="flex flex-col space-y-4 w-3/4">
-            <h3 class="text-bold text-black text-3xl">Welcome to WattNerd!!</h3>
-            <h4 class="text-gray-500 text-2xl">The Best EBook Store </h4>
-            <div class="flex space-x-8 pt-4">
-                <button class="bg-black text-white mx-0 text-center rounded-full py-2 px-4 text-1xl">Newest Arrivals</button>
-                <button class="bg-orange-600 text-black mx-0 text-center rounded-full py-2 px-4 text-1xl">Register</button>
-            </div>
-            <p class="text-black text-1xl">Buy eBooks online from Australia's leading online eBook store. Download eBooks </p>
-            <p class="text-gray-700">Search thousands of books for download online...</p>
+<header class="position-relative">
+    <span class="mask bg-gradient-warning opacity-1"></span>
+    <div class="page-header min-vh-75 position-relative">
+        <div class="position-absolute top-0 start-0 w-40 h-100 d-md-block d-none">
+            <div class="bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n8" style="background-image:url(https://images.unsplash.com/photo-1525430182374-bf7e61d4f220?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1140&amp;q=80)"></div>
         </div>
-    </header>
- 
-    <!-- books list -->
-    <div class="flex flex-col justify-center mx-auto px-24 bg-yellow-400 items-center space-y-4">
-        <h2 class="text-2xl items-center pl-6">Books Available</h2>
-        <!-- list 1 -->
-        <div class="flex flex-row space-x-6 w-full justify-center">
-            <div class="flex flex-col justify-center w-1/4 bg-yellow-300 rounded-full m-2 text-center">
-                <img src="" alt="book1">
-                <h2 class="text-2xl">Title</h2>
-                <p class="text-1xl">12.99$</p>
-                <button class="text-white bg-black rounded-full py-2 px-6">Add to Cart</button>
-                <p></p>
-            </div>
-            <div class="flex flex-col justify-center w-1/4 bg-yellow-300 rounded-full">
-                <img src="" alt="book1">
-                <h4></h4>
-                <p>12.99$</p>
-                <p></p>
-            </div>
-            <div class="flex flex-col justify-center w-1/4">
-                <img src="" alt="book1">
-                <h4></h4>
-                <p>12.99$</p>
-                <p></p>
-            </div>
-            <div class="flex flex-col justify-center w-1/4">
-                <img src="" alt="book1">
-                <h4></h4>
-                <p>12.99$</p>
-                <p></p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 d-flex justify-content-center text-md-start ms-auto text-center flex-column">
+                    <span class="ms-md-4 ps-1 text-dark font-weight-bold text-sm mb-0" spellcheck="false">Buy 2 products and get free shipping</span>
+                    <h1 class="display-1 font-weight-bolder ps-0 ms-md-4 w-md-70 text-dark text-gradient text-capitalize">Best EBook Store</h1>
+                    <div class="buttons ms-md-4 ps-2 mt-4 d-flex mx-auto">
+                        <button type="button" class="btn bg-gradient-dark mb-0">Shop now</button>
+                        <div class="d-flex d-inline-block align-items-center">
+                            <button class="btn btn-icon-only btn-outline-dark btn-rounded ms-3 mb-0" type="button">
+                                <span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
+                            </button>
+                            <span class="text-uppercase ms-2 font-weight-bolder text-xs text-dark">Our story </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- list 2 -->
-
     </div>
+ </header>
+<!-- books list -->
+<section class="pb-5 pt-7">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 mb-4">
+                <div class="card h-100 mb-4 min-height-250 card-background align-items-start" style="background-image: url(https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2073&amp;q=80); background-size: cover;">
+                    <div class="card-body w-100 z-index-3 text-start d-flex flex-column align-items-center">
+                        <span class="me-auto">Trending Now</span>
+                        <h3 class="text-white font-weight-bolder me-auto">Historical New Collection</h3>
+                        <a href="javascript:;" class="btn mb-0 btn-white btn-sm px-4 me-auto mt-auto icon-move-right mb-0">
+                            Shop Collection
+                            <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 mb-4">
+                <div class="card mb-4 min-height-250 card-background align-items-start" style="background-image: url(https://images.unsplash.com/photo-1534698435722-8d4dd3902268?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80); background-size: cover;">
+                    <div class="card-body w-100 z-index-3 text-start d-flex flex-column align-items-center">
+                        <span class="me-auto">Trending Now</span>
+                        <h3 class="text-white font-weight-bolder me-auto">Romance Books</h3>
+                        <a href="javascript:;" class="btn mb-0 btn-white btn-sm px-4 me-auto mt-auto icon-move-right mb-0">
+                            Shop Collection
+                            <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card mb-0 min-height-250 card-background align-items-start" style="background-image: url(https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2230&amp;q=80); background-size: cover;">
+                    <div class="card-body w-100 z-index-3 text-start d-flex flex-column align-items-center">
+                        <span class="me-auto">Weekly News</span>
+                        <h3 class="text-white font-weight-bolder me-auto">Thriller Collection</h3>
+                        <a href="javascript:;" class="btn mb-0 btn-white btn-sm px-4 me-auto mt-auto icon-move-right mb-0">
+                            Shop Collection
+                            <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pb-3">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h3 class="mb-5" spellcheck="false">View Tranding Books</h3>
+            </div>
+            <div class="col-lg-3 mb-lg-0 mb-4">
+                <div class="card">
+                    <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
+                        <a href="javascript:;" class="d-block">
+                            <img src="https://images.unsplash.com/photo-1635715390924-3936ee04f584?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80" class="img-fluid border-radius-lg shadow">
+                        </a>
+                    </div>
+
+                    <div class="card-body pt-3">
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <span class="text-sm">Men</span>
+                                <h4 class="card-description font-weight-bolder text-dark mb-4">
+                                    Biography</h4>
+                            </div>
+                            <div class="ms-auto">
+                                <a href="javascript:;" class="btn btn-link text-dark p-0">
+                                    <i class="fa fa-star text-lg" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <h5 class="mb-0 font-weight-bolder">$25.40</h5>
+                            <h5 class="mb-0 opacity-4 text-sm ms-2"><strike>$29.00</strike></h5>
+                        </div>
+                        <a href="javascript:;" class="btn btn-outline-dark mb-0">Add to cart</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-lg-0 mb-4">
+                <div class="card">
+                    <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
+                        <a href="javascript:;" class="d-block">
+                            <img src="https://images.unsplash.com/photo-1577210897949-1f56f943bf82?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80" class="img-fluid border-radius-lg shadow">
+                        </a>
+                    </div>
+
+                    <div class="card-body pt-3">
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <span class="text-sm">Women</span>
+                                <h4 class="card-description font-weight-bolder text-dark mb-4">
+                                    Romance</h4>
+                            </div>
+                            <div class="ms-auto">
+                                <a href="javascript:;" class="btn btn-link text-dark p-0">
+                                    <i class="fa fa-star text-lg" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <h5 class="mb-0 font-weight-bolder">$19.00</h5>
+                            <h5 class="mb-0 opacity-4 text-sm ms-2"><strike>$29.00</strike></h5>
+                        </div>
+                        <a href="javascript:;" class="btn btn-outline-dark mb-0">Add to cart</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-lg-0 mb-4">
+                <div class="card">
+                    <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
+                        <a href="javascript:;" class="d-block">
+                            <img src="https://images.unsplash.com/photo-1546938576-6e6a64f317cc?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80" class="img-fluid border-radius-lg shadow">
+                        </a>
+                    </div>
+
+                    <div class="card-body pt-3">
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <span class="text-sm">Unisex</span>
+                                <h4 class="card-description font-weight-bolder text-dark mb-4">
+                                    Thriller</h4>
+                            </div>
+                            <div class="ms-auto">
+                                <a href="javascript:;" class="btn btn-link text-dark p-0">
+                                    <i class="fa fa-star text-lg" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <h5 class="mb-0 font-weight-bolder">$9.90</h5>
+                            <h5 class="mb-0 opacity-4 text-sm ms-2"><strike>$15.00</strike></h5>
+                        </div>
+                        <a href="javascript:;" class="btn btn-outline-dark mb-0">Add to cart</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-lg-0 mb-4">
+                <div class="card">
+                    <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
+                        <a href="javascript:;" class="d-block">
+                            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80" class="img-fluid border-radius-lg shadow">
+                        </a>
+                    </div>
+
+                    <div class="card-body pt-3">
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <span class="text-sm">Unisex</span>
+                                <h4 class="card-description font-weight-bolder text-dark mb-4">
+                                    Historical</h4>
+                            </div>
+                            <div class="ms-auto">
+                                <a href="javascript:;" class="btn btn-link text-dark p-0">
+                                    <i class="fa fa-star text-lg" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <h5 class="mb-0 font-weight-bolder">$39.20</h5>
+                            <h5 class="mb-0 opacity-4 text-sm ms-2"><strike>$59.00</strike></h5>
+                        </div>
+                        <a href="javascript:;" class="btn btn-outline-dark mb-0">Add to cart</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-5 text-center">
+                <a href="javascript" class="btn bg-gradient-dark">View All</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="pb-6">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h3 class="mb-5" spellcheck="false">New Release</h3>
+            </div>
+            <div class="col-lg-3 mb-lg-0 mb-4">
+                <div class="card">
+                    <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
+                        <a href="javascript:;" class="d-block">
+                            <img src="https://images.unsplash.com/photo-1605034313761-73ea4a0cfbf3?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80" class="img-fluid border-radius-lg shadow">
+                        </a>
+                    </div>
+
+                    <div class="card-body pt-3">
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <span class="text-sm">Men</span>
+                                <h4 class="card-description font-weight-bolder text-dark mb-4">
+                                    Shoes</h4>
+                            </div>
+                            <div class="ms-auto">
+                                <a href="javascript:;" class="btn btn-link text-dark p-0">
+                                    <i class="fa fa-star text-lg" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <h5 class="mb-0 font-weight-bolder">$25.40</h5>
+                            <h5 class="mb-0 opacity-4 text-sm ms-2"><strike>$29.00</strike></h5>
+                        </div>
+                        <a href="javascript:;" class="btn btn-outline-dark mb-0">Add to cart</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-lg-0 mb-4">
+                <div class="card">
+                    <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
+                        <a href="javascript:;" class="d-block">
+                            <img src="https://images.unsplash.com/photo-1521127376958-80338b32f37b?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80" class="img-fluid border-radius-lg shadow">
+                        </a>
+                    </div>
+
+                    <div class="card-body pt-3">
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <span class="text-sm">Unisex</span>
+                                <h4 class="card-description font-weight-bolder text-dark mb-4">
+                                    Watch</h4>
+                            </div>
+                            <div class="ms-auto">
+                                <a href="javascript:;" class="btn btn-link text-dark p-0">
+                                    <i class="fa fa-star text-lg" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <h5 class="mb-0 font-weight-bolder">$19.00</h5>
+                            <h5 class="mb-0 opacity-4 text-sm ms-2"><strike>$29.00</strike></h5>
+                        </div>
+                        <a href="javascript:;" class="btn btn-outline-dark mb-0">Add to cart</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-lg-0 mb-4">
+                <div class="card">
+                    <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
+                        <a href="javascript:;" class="d-block">
+                            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80" class="img-fluid border-radius-lg shadow">
+                        </a>
+                    </div>
+
+                    <div class="card-body pt-3">
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <span class="text-sm">Men</span>
+                                <h4 class="card-description font-weight-bolder text-dark mb-4">
+                                    T-shirt</h4>
+                            </div>
+                            <div class="ms-auto">
+                                <a href="javascript:;" class="btn btn-link text-dark p-0">
+                                    <i class="fa fa-star text-lg" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <h5 class="mb-0 font-weight-bolder">$9.90</h5>
+                            <h5 class="mb-0 opacity-4 text-sm ms-2"><strike>$15.00</strike></h5>
+                        </div>
+                        <a href="javascript:;" class="btn btn-outline-dark mb-0">Add to cart</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-lg-0 mb-4">
+                <div class="card">
+                    <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
+                        <a href="javascript:;" class="d-block">
+                            <img src="https://images.unsplash.com/photo-1602752250015-52934bc45613?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1503&amp;q=80" class="img-fluid border-radius-lg shadow">
+                        </a>
+                    </div>
+
+                    <div class="card-body pt-3">
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <span class="text-sm">Women</span>
+                                <h4 class="card-description font-weight-bolder text-dark mb-4">
+                                    Ring</h4>
+                            </div>
+                            <div class="ms-auto">
+                                <a href="javascript:;" class="btn btn-link text-dark p-0">
+                                    <i class="fa fa-star text-lg" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <h5 class="mb-0 font-weight-bolder">$39.20</h5>
+                            <h5 class="mb-0 opacity-4 text-sm ms-2"><strike>$59.00</strike></h5>
+                        </div>
+                        <a href="javascript:;" class="btn btn-outline-dark mb-0">Add to cart</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-5 text-center">
+                <a href="javascript" class="btn bg-gradient-dark">View All</a>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="">
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <img class="w-100 opacity-9" src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/gray-logos/logo-coinbase.svg" alt="logo">
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <img class="w-100 opacity-9" src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/gray-logos/logo-nasa.svg" alt="logo">
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <img class="w-100 opacity-9" src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/gray-logos/logo-netflix.svg" alt="logo">
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <img class="w-100 opacity-9" src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/gray-logos/logo-pinterest.svg" alt="logo">
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <img class="w-100 opacity-9" src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/gray-logos/logo-spotify.svg" alt="logo">
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <img class="w-100 opacity-9" src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/gray-logos/logo-vodafone.svg" alt="logo">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+ 
 {% endblock %}
